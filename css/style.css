@@ -61,8 +61,16 @@ a {
   padding-left: 7px;
   padding-right: 7px;
   font-size: 20px;
-  float: right;
+  float: left;
   list-style: none;
+}
+
+#icon-pos {
+  margin-left: 305px;
+}
+
+#selected {
+  color: #333;
 }
 
 #showcase img {
