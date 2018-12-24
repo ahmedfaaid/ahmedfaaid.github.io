@@ -29,8 +29,16 @@ header li a:hover {
   margin: 0 auto;
 }
 
+#site-logo img {
+  width: 90px;
+  float: left;
+  padding-top: 58px;
+  padding-right: 20px;
+}
+
 #main-menu {
-  width: 40%;
+  width: 50%;
+  margin-left: 25%;
 }
 
 nav {
@@ -42,8 +50,8 @@ nav {
 
 nav li {
   display: inline-block;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 a {
