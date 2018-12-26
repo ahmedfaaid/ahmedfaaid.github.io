@@ -72,3 +72,10 @@ i:hover {
 .showcase img {
     width: 100%;
 }
+
+.images img {
+    max-width: 300px;
+    max-height: 304px;
+    display: block;
+    margin: auto;
+}
