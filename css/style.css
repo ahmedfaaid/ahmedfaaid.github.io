@@ -16,6 +16,7 @@ header {
 }
 
 .container {
+    margin: 0 auto;
     max-width: 80%;
 }
 
@@ -76,4 +77,19 @@ li a {
 
 .social-icons a:hover {
     color: #333;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.images {
+    width: 250px;
+    height: 250px;
+}
+
+.images img {
+    width: 250px;
+    height: auto;
 }
