@@ -96,6 +96,10 @@ figure {
     padding: 10px;
 }
 
+#header nav ul li a i {
+    font-size: 1.3rem;
+}
+
 @media screen and (max-width: 480px) {
     #header nav ul li a {
         padding: 5px;
@@ -115,10 +119,109 @@ figure {
     color: black !important;
 }
 
-.fh5co-projects-feed,
+.projects-feed,
 .footer-content {
     margin: 0 auto;
     max-width: 1400px;
+}
+
+.projects-feed .project {
+    float: left;
+    margin: 20px 20px 20px;
+    width: 290px;
+}
+
+@media screen and (max-width: 480px) {
+    .projects-feed .project {
+        margin: 10px 10px 10px;
+    }
+}
+
+.projects-feed .project>a {
+    display: block;
+    text-align: center;
+}
+
+.projects-feed .project>a img {
+    margin-bottom: 30px;
+}
+
+.projects-feed .project>a h2 {
+    font-size: 14px;
+    color: #999999;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.projects-feed .project>a:hover h2,
+.projects-feed .project>a:active h2,
+.projects-feed .project>a:focus h2 {
+    color: #000;
+}
+
+.masonry,
+.masonry .masonry-brick {
+    -webkit-transition-duration: 0.7s;
+    transition-duration: 0.7s;
+}
+
+.masonry {
+    -webkit-transition-property: height, width;
+    transition-property: height, width;
+}
+
+.masonry .masonry-brick {
+    -webkit-transition-property: left, right, top;
+    transition-property: left, right, top;
+}
+
+.page-content {
+    margin: 0 auto;
+    max-width: 620px;
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.page-content img {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .page-content {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.page-content .mb0 {
+    margin-bottom: 0;
+}
+
+.page-content .meta {
+    margin-bottom: 20px;
+}
+
+.page-content .meta span {
+    color: #bfbfbf;
+}
+
+.page-content .meta a {
+    color: #bfbfbf;
+}
+
+.page-content .meta a:hover,
+.page-content .meta a:active,
+.page-content .meta a:focus {
+    color: #000 !important;
+}
+
+@media screen and (max-width: 480px) {
+    .page-content {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
 }
 
 footer {
