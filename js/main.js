@@ -1,7 +1,7 @@
 (function ($) {
     "use strict";
 
-    $(window).load(function () {
+    $(document).ready(function () {
         var $container = $('#projects-feed'),
             containerWidth = $container.outerWidth();
 
@@ -19,4 +19,4 @@
         });
     });
 
-})(window.jQuery);
+})

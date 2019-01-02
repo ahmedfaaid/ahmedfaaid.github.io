@@ -160,6 +160,13 @@ figure {
     color: #000;
 }
 
+
+.projects-feed .project img {
+    max-width: 100%;
+    height: auto;
+    ;
+}
+
 .masonry,
 .masonry .masonry-brick {
     -webkit-transition-duration: 0.7s;
@@ -263,4 +270,28 @@ footer {
 #footer .social a:active,
 #footer .social a:focus {
     color: #000 !important;
+}
+
+.square {
+    list-style: square;
+}
+
+.pt70 {
+    padding-top: 70px;
+}
+
+@media screen and (max-width: 480px) {
+    .pt70 {
+        padding-top: 30px;
+    }
+}
+
+.pb70 {
+    padding-bottom: 70px;
+}
+
+@media screen and (max-width: 480px) {
+    .pb70 {
+        padding-bottom: 30px;
+    }
 }
