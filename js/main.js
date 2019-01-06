@@ -3,7 +3,8 @@ $(function () {
   // Vars.
   var $window = $(window),
     $body = $('body'),
-    $wrapper = $('#wrapper');
+    $wrapper = $('#wrapper'),
+    $thumbnails = $('.thumbnails');
 
   // Breakpoints.
   skel.breakpoints({
@@ -24,14 +25,14 @@ $(function () {
   // Poptrox.
   $window.on('load', function () {
 
-    $('.thumbnails').poptrox({
-      onPopupClose: function () {
-        $body.removeClass('is-covered');
-      },
+    $thumbnails.poptrox({
       onPopupOpen: function () {
         $body.addClass('is-covered');
       },
-      baseZIndex: 10001,
+      onPopupClose: function () {
+        $body.removeClass('is-covered');
+      },
+      baseZIndex: 1000,
       useBodyOverflow: false,
       usePopupEasyClose: true,
       overlayColor: '#000000',
@@ -40,6 +41,16 @@ $(function () {
       fadeSpeed: 500,
       usePopupDefaultStyling: false,
       windowMargin: (skel.breakpoint('small').active ? 5 : 50)
+    });
+
+  });
+
+  $(document).ready(function () {
+
+    $('.cropped-images img').each(function () {
+      if ($(this).width() > $(this).height()) {
+        $(this).addClass('landscape');
+      }
     });
 
   });
