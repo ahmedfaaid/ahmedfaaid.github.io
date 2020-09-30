@@ -1,4 +1,4 @@
-# Kwesi Baba-portfolio
+# Kwesi Baba's Helpful-portfolio
 
 This portfolio was built using 2 free html templates (Present and Visualize), animate css, modernizr,
 and skeljs for browser breakpoints.
